@@ -17,30 +17,19 @@ function typeWriter() {
 
     }
 }
-    </script>
-
-    <script>
-
 
 var g = 0;
 var txtg = "{{mtn2}}"
 var speedg = 50;
       
 function TypeTow() {
-  if (g < txt.length) {
-   document.getElementById("mtn2").innerHTML += txtg.charAt(g);
-   i++;
-   setTimeout(TypeTow, speedg);
-      
-          }
-
-
-
+    if (g < txtg.length) { 
+        document.getElementById("mtn2").innerHTML += txtg.charAt(g);
+        g++;
+        setTimeout(TypeTow, speedg);
+}
+}
     </script>
-
-
-
-
 
 
 {#    <button type="button"  >helooooooo</button>#}
@@ -50,10 +39,10 @@ function TypeTow() {
  <div class="felex-one" >   <div class="felex-one-in"> <p id="demo" class="h1" ></p>  </div>  </div>
 
 
-    <div class="felex-two"  >   <div class="felex-two-in"> <p id="mtn2" class="h1" ></p>      </div>  </div>
+ <div class="felex-two"  >   <div class="felex-two-in"> <p id="mtn2" style="color:white" ></p>      </div>  </div>
 
 
-    <div class="felex-three" >  < div class="ffelex-three-in">       </div>  </div>
+ <div class="felex-three" >  < div class="ffelex-three-in">       </div>  </div>
 
 
 
