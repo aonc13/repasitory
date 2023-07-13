@@ -15,13 +15,13 @@
 
 .felex-one {
   border:2px solid green;
-    flex: 35%;
-    height: 45vh;
-    word-break: break-all;
+  flex: 35%;
+  height: 45vh;
+  word-break: break-all;
 
 
 }
-.felex-one-in{
+.felex-one-in {
     margin: 3vh;
     height: 40vh;
     border:2px solid green;
@@ -32,11 +32,17 @@
 
     border:2px solid green;
     flex: 35%;
-
-
+    height: 45vh;
+    word-break: break-all;
 
 }
+.felex-two-in{
 
+    margin: 3vh;
+    height: 40vh;
+    border:2px solid green;
+    overflow: hidden;
+}
 
 .felex-three {
   border:2px solid green;
