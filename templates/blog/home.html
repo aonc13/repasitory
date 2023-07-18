@@ -29,6 +29,17 @@ function TypeTow() {
         setTimeout(TypeTow, speedg);
 }
 }
+var j = 0;
+var txtj = "{{mtn3}}"
+var speedj = 50;
+
+function TypeThree() {
+    if (j < txtg.length) {
+        document.getElementById("mtn3").innerHTML += txtj.charAt(j);
+        j++;
+        setTimeout(TypeThree, speedj);
+    }
+}
     </script>
 
 
@@ -42,10 +53,46 @@ function TypeTow() {
  <div class="felex-two"  >   <div class="felex-two-in"> <p id="mtn2"class="h3" ></p>      </div>  </div>
 
 
- <div class="felex-three" >  < div class="ffelex-three-in">       </div>  </div>
+ <div class="felex-three" >  <div class="felex-three-in">  <p id="mtn3"class="h3" >     </div>  </div>
+
+
+<di id="d-itm-1">
+    {% for g in menuItem %}
+        <div class="custom-box">
+            <h2 class="box-title">{{ g.name }}</h2>
+            <a href="{{ g.lnk_a }}" class="box-content">{{ g.mtn_kol }}</a>
+         </div>
+    {% endfor %}
+
+
+</di>
 
 
 
+
+
+
+
+<div id="slideshow" class="slideshow-container">
+        <p style="color:white;">heloo</p>
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="{% static 'blog/img/bg.jpg' %}" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="{% static 'blog/img/ss.jpg' %}" style="width:100%; ">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="{% static 'blog/img/bg.jpg' %}" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
 </div>
 
 
@@ -63,30 +110,14 @@ function TypeTow() {
       {% comment %} <a style="position:relative;top:300vh" id="a1">
         heloow
       </a> {% endcomment %}
-   
-   
-   
+
+
    
     </div>
-    <div id="slideshow" class="slideshow-container">
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="{% static 'blog/img/bg.jpg' %}" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="{% static 'blog/img/ss.jpg' %}" style="width:100%; ">
-        <div class="text">Caption Two</div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="{% static 'blog/img/bg.jpg' %}" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
+
+
+
       
       </div>
       <br>
