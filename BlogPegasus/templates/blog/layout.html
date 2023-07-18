@@ -1,42 +1,22 @@
 {% load static %}
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <link rel="stylesheet" href="{% static 'css/styl1.css' %}" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   {% block head %}
   
   
-  
   {% endblock head %}
-  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'css/styl1.css' %}" >
-<style>
-  .container{
-    justify-content: center;
-    filter: blur(.6px);
-    background-color: black;
-    width: 100%;
-    padding-bottom:20px;
-
-    }
-    #pp{
-      color:rgb(14, 92, 14);
-      display:inline-block;
-      font-size: 45px;
-      text-align:center;
-      height:45%;
-      width: 0ch;
-      overflow:hidden;
-      border-right: 1px solid white;
-      animation:
-      typing .5s steps(7) forwards 1s;
-    }
-    @keyframes typing{
-      100% {width:9.5ch;}
-    }
 
 
-</style>
+
+
+
+  
+
+    
 </head>
 
 
@@ -75,7 +55,7 @@
   </div>
 </nav>
 
-<div  id="container" class='container'>
+<div style=""id='container'  >
   <p id="pp">Who Am I?</p><p id="pp" style="font-size:25px;">IM full stack?</p><p id="pp">IM Hacker?</p><p id="pp" style="font-size:25px;" >Who Ar You?</p><p id="pp" >Pegasus</p>
 </div>
 

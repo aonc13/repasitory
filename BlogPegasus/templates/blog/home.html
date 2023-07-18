@@ -1,13 +1,15 @@
 {% extends 'blog/layout.html' %}
 {% load static %}
+
 {% block head %}
-  <title>PegasusWeb</title>
+
+<title>PegasusWeb</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="{% static 'js/bootstrap.min' %}"></script>
+  <script src="{% static 'js/jquery.min' %}"></script>
   <script>
     function scrollToTarget() {
       const target = document.getElementById('slideshow');
@@ -17,11 +19,12 @@
     }
     
 </script>
-    
-
-
 
 {% endblock head %}
+
+
+
+
 {% block body %}
 
 
@@ -120,15 +123,15 @@ function TypeThree() {
 
   <img id="img" src="{% static 'blog/img/bg.jpg' %}" alt="sh" >
       <div id="home-line">
-        
+
          <a style="cursor: pointer;" onclick="scrollToTarget()" >
-        
+
           <i style="font-size: 40px;color: white;border: 1px solid black;border-radius: 15px" class="fa fa-user-secret">
-          
+
           </i>
         </a>
       </div>
-      
+
 
 
 
@@ -140,12 +143,7 @@ function TypeThree() {
         <span class="dot"></span> 
         <span class="dot"></span> 
       </div>
-
-{% comment %} <div class='div_footer'>
-    <p id='p1'>haloooo</p>
-
-</div> {% endcomment %}
-
+      
       
       <script>
       let slideIndex = 0;
@@ -169,4 +167,3 @@ function TypeThree() {
       }
       </script>
 {% endblock %}
-<i class="fa fa-user-secret"></i>

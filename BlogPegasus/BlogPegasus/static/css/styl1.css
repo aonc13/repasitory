@@ -273,9 +273,51 @@
     height: 25vh;
     justify-content: center;
 }
-.div_footer{
-  color: white;
-  position: relative;
-  top: 150vh;
-  margin: auto;
-}
+
+#container{
+  filter: blur(.6px);
+  background-color: black;
+  width: 100%;
+  padding-bottom:20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+
+
+  }
+
+  #pp{
+    color:rgb(14, 92, 14);
+    display:inline-block;
+    font-size: 45px;
+    text-align:center;
+    height:45%;
+    width: 0ch;
+    overflow:hidden;
+    border-right: 1px solid white;
+    animation:
+    typing .5s steps(7) forwards 1s;
+  }
+
+  @keyframes typing{
+    100% {width:13ch;}
+  }
+  
+@media (min-width: 768px)
+  .container{
+      width: 750px;
+        }
+
+.container{
+
+
+  justify-content: center;
+  filter: blur(.6px);
+  background-color: black;
+  width: 100%;
+  padding-bottom:20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+          }
